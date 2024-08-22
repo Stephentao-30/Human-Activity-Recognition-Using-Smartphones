@@ -22,12 +22,15 @@ This code book describes the variables, data, and transformations performed to c
   - LAYING
 
 ### Measurements
-- **TimeBodyAccelerometerMean_X, TimeBodyAccelerometerMean_Y, TimeBodyAccelerometerMean_Z**: Numeric. Mean of the body acceleration signal in the X, Y, and Z directions.
-- **TimeBodyAccelerometerStandardDeviation_X, TimeBodyAccelerometerStandardDeviation_Y, TimeBodyAccelerometerStandardDeviation_Z**: Numeric. Standard deviation of the body acceleration signal in the X, Y, and Z directions.
-- **TimeGravityAccelerometerMean_X, TimeGravityAccelerometerMean_Y, TimeGravityAccelerometerMean_Z**: Numeric. Mean of the gravity acceleration signal in the X, Y, and Z directions.
-- **TimeGravityAccelerometerStandardDeviation_X, TimeGravityAccelerometerStandardDeviation_Y, TimeGravityAccelerometerStandardDeviation_Z**: Numeric. Standard deviation of the gravity acceleration signal in the X, Y, and Z directions.
-- **FrequencyBodyAccelerometerMean_X, FrequencyBodyAccelerometerMean_Y, FrequencyBodyAccelerometerMean_Z**: Numeric. Mean of the body acceleration signal in the X, Y, and Z directions in the frequency domain.
-- **...** (Continue listing all the relevant variables.)
+
+The tidy data set contains variables derived from the original dataset, which are measurements of mean and standard deviation values. The measurements include the following types:
+
+- **TimeBodyAccelerometerMean_X**: Numeric. The mean of the body acceleration signal in the X direction, measured in the time domain.
+- **TimeBodyAccelerometerMean_Y**: Numeric. The mean of the body acceleration signal in the Y direction, measured in the time domain.
+- **TimeBodyAccelerometerMean_Z**: Numeric. The mean of the body acceleration signal in the Z direction, measured in the time domain.
+- **TimeBodyAccelerometerStandardDeviation_X**: Numeric. The standard deviation of the body acceleration signal in the X direction, measured in the time domain.
+- **TimeGravityAccelerometerMean_X**: Numeric. The mean of the gravity acceleration signal in the X direction, measured in the time domain.
+- **FrequencyBodyAccelerometerMean_X**: Numeric. The mean of the body acceleration signal in the X direction, measured in the frequency domain.
 
 ### Transformations and Cleaning Steps
 1. **Merging Datasets**: The training and test datasets were merged to create one data set.
