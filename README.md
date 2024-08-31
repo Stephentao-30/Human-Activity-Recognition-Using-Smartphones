@@ -12,7 +12,7 @@ The experiments have been carried out with a group of 30 volunteers aged between
 
 This repository contains the following files:
 
-- `CourseProject.R`: R script that performs the data cleaning and analysis.
+- `run_analysis.R`: R script that performs the data cleaning and analysis.
 - `tidyData.txt`: The final tidy data set created by the `run_analysis.R` script.
 - `CodeBook.md`: Describes the variables, data, and transformations performed to clean the data.
 - `README.md`: This file, providing an overview of the project and instructions on how to use the files.
@@ -30,7 +30,7 @@ Before running the `run_analysis.R` script, ensure that the Samsung data set is 
    - Unzip it in your R working directory.
 
 2. **Run the Script**:
-   - Open the `CourseProject.R` script in RStudio or your preferred R environment.
+   - Open the `run_analysis.R` script in RStudio or your preferred R environment.
    - Run the script by sourcing it or executing it line by line.
 
 3. **Output**:
@@ -39,7 +39,7 @@ Before running the `run_analysis.R` script, ensure that the Samsung data set is 
 
 ### Script Details
 
-The `CourseProject.R` script performs the following steps:
+The `run_analysis.R` script performs the following steps:
 
 1. **Merges the Training and the Test Sets**: Combines the training and test datasets to create one data set.
 2. **Extracts Mean and Standard Deviation Measurements**: Extracts only the measurements on the mean and standard deviation for each measurement.
