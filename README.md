@@ -13,7 +13,6 @@ The experiments have been carried out with a group of 30 volunteers aged between
 This repository contains the following files:
 
 - `run_analysis.R`: R script that performs the data cleaning and analysis.
-- `tidyData.txt`: The final tidy data set created by the `run_analysis.R` script.
 - `CodeBook.md`: Describes the variables, data, and transformations performed to clean the data.
 - `README.md`: This file, providing an overview of the project and instructions on how to use the files.
 
