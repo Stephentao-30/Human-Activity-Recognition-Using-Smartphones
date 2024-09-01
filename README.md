@@ -21,31 +21,28 @@ This repository contains the following files:
 
 ### Prerequisites
 
-Before running the `run_analysis.R` script, ensure that the Samsung data set is in your working directory. You can download the data from [this link](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) and unzip it into your working directory.
+The script will automatically download and unzip the dataset, so no manual download is required.
 
 ### Steps to Run
 
-1. **Download and Unzip the Data Set**:
-   - Download the dataset from the above link.
-   - Unzip it in your R working directory.
+1. **Run the Script**:
+   - Simply run the `run_analysis.R` script in RStudio or your preferred R environment.
+   - The script will automatically download the dataset, perform the necessary data cleaning, and generate the tidy dataset.
 
-2. **Run the Script**:
-   - Open the `run_analysis.R` script in RStudio or your preferred R environment.
-   - Run the script by sourcing it or executing it line by line.
-
-3. **Output**:
-   - The script will generate a tidy data set and save it as `tidyData.txt` in the `data` folder of your working directory.
-   - The tidy data set contains the average of each variable for each activity and each subject.
+2. **Output**:
+   - The script generates a tidy dataset and saves it as `tidyData.txt` in the `data` folder of your working directory.
+   - The tidy dataset contains the average of each variable for each activity and each subject.
 
 ### Script Details
 
 The `run_analysis.R` script performs the following steps:
 
-1. **Merges the Training and the Test Sets**: Combines the training and test datasets to create one data set.
-2. **Extracts Mean and Standard Deviation Measurements**: Extracts only the measurements on the mean and standard deviation for each measurement.
-3. **Applies Descriptive Activity Names**: Replaces activity codes with descriptive activity names.
-4. **Labels the Data Set**: Appropriately labels the data set with descriptive variable names.
-5. **Creates a Tidy Data Set**: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1. **Downloads and Unzips the Dataset**: The script checks if the dataset is already present; if not, it downloads and unzips it.
+2. **Merges the Training and Test Sets**: Combines the training and test datasets to create one comprehensive dataset.
+3. **Extracts Mean and Standard Deviation Measurements**: Extracts only the measurements on the mean and standard deviation for each measurement.
+4. **Applies Descriptive Activity Names**: Replaces activity codes with descriptive activity names.
+5. **Labels the Data Set**: Appropriately labels the dataset with descriptive variable names.
+6. **Creates a Tidy Data Set**: From the cleaned dataset, the script creates a second, independent tidy dataset with the average of each variable for each activity and each subject.
 
 ### Dependencies
 
@@ -54,7 +51,7 @@ The following R packages are required to run the script:
 - `data.table`: For efficient data manipulation.
 - `dplyr`: For data transformation operations like `group_by` and `summarize`.
 
-If these packages are not installed, the script will attempt to install them.
+If these packages are not installed, the script will automatically install them.
 
 ```r
 # Set CRAN mirror
